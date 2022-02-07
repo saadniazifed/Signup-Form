@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Container where everything is going to be placed inside. */
+.container {
+  padding: 10px;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The container where sidebar and the content will come inplace. */
+.sign-up-form-container {
+  height: 720px;
+  width: 900px;
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+/* Container to place the sidebar in. */
+.sidebar-container {
+  height: 720px;
+  width: 481px;
+  position: relative;
+}
+
+/* Fitting the image inside the container. */
+.image-container {
+  position: relative;
+  background-image: url(plant.jpg);
+  height: 720px;
+  width: 300px;
+  background-size: cover;
+}
+
+.right-side-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Transparent background */
+.transparent-background-container {
+  width: 300px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Putting a transparent background */
+.transparent-background-container > div {
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Odin text inside that background.*/
+.transparent-background-container > div > h2 {
+  color: white;
+  font-family: Norse-Bold;
+  font-size: 75px;
+}
+
+/* Odin Image inside the background. */
+.transparent-background-container > div > img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* First Div on top of the sign-up form. */
+.header-container {
+  width: 600px;
+  height: 250px;
+  background-color: rgb(211, 211, 211, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Paragraphs inside the div. */
+.header-container > div > p {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 40px;
+  word-wrap: break-word;
+  padding-right: 15px;
+}
+
+/* Giving a margin-top to the third paragraph of paragraphs-header class. */
+.paragraphs-header > p:nth-of-type(3) {
+  margin-top: 10px;
+}
+
+/* Middle Section Container */
+.middle-section {
+  width: 600px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  display: flex;
+}
+
+.wrapper-middle-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+/* Targeting the bold text at the start of the middle-section */
+.wrapper-middle-section > p:first-of-type {
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Form Editing Starts */
+
+.first-row,
+.middle-row,
+.last-row {
+  display: flex;
+  gap: 90px;
+}
+
+/* To make the label come above the input text. */
+input,
+label {
+  display: block;
+}
+
+/* Styling the label and placeholder texts. */
+label,
+::placeholder {
+  font-family: Lora;
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+input {
+  padding: 3px;
+}
+
+/* Form Editing Done for now. */
