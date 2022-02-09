@@ -1,9 +1,3 @@
-const password = document.getElementsByTagName("input")[4].value;
-const confirm_password = document.getElementsByTagName("input")[5].value;
-const message = document.querySelector(".message");
-const user_password = document.getElementById("user_password");
-const confirm_password_input = document.getElementById("confirm_password");
-
 // Preventing the form from submitting.
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
@@ -11,6 +5,12 @@ document.getElementById("form").addEventListener("submit", function (event) {
 });
 
 function passwordValidation() {
+  const password = document.getElementsByTagName("input")[4].value;
+  const confirm_password = document.getElementsByTagName("input")[5].value;
+  const message = document.querySelector(".message");
+  const user_password = document.getElementById("user_password");
+  const confirm_password_input = document.getElementById("confirm_password");
+
   if (password == confirm_password) {
     // Some basic styling that matches this condition.
     message.textContent = "Passwords match.";
