@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Form.</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -125,31 +126,5 @@
         </div>
       </div>
     </div>
-    <script>
-      // Preventing the form from submitting
-      document
-        .getElementById("form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          passwordValidation();
-        });
-
-      function passwordValidation() {
-        const password = document.querySelector(".password").value;
-        const confirm_password =
-          document.querySelector(".confirm-password").value;
-        const message = document.querySelector(".message");
-
-        if (password == confirm_password) {
-          message.textContent = "Passwords match.";
-          message.style.color = "green";
-        } else if (password != confirm_password) {
-          message.textContent = "Passwords don't match.";
-          message.style.color = "red";
-        } else {
-          message.textContent = "something has gone wrong.";
-        }
-      }
-    </script>
   </body>
 </html>
